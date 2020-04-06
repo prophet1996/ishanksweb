@@ -21,8 +21,8 @@ const HighlightedSpan = styled.span`
 `;
 const StyledSuggestion = styled.div`
   display: flex;
-  margin-top: 1em;
-  margin-inline-start: 1em;
+  margin-top: 1.2em;
+  margin-inline-start: 1.2em;
   @media ${(props) => props.theme.deviceMax.mobileL} {
     flex-wrap: wrap;
   }
