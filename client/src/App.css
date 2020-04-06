@@ -59,12 +59,6 @@ span {
   line-height: 1;
 }
 
-kbd {
-  font-family: "Inconsolata", monospace;
-  border: 1px solid #999;
-  text-transform: uppercase;
-  padding: 0 0.2em;
-}
 input[type="text"] {
   max-width: 10em;
   border: none;

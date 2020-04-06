@@ -28,7 +28,11 @@ export const COMMAND_LIST = [
     description: "Show a list sample projects",
     route: "/showcase",
   },
-  { name: "command 2", description: "command 2 desc" },
+  {
+    name: "Resume",
+    description: "Displays my resume on the screen",
+    route: "/resume",
+  },
   { name: "command 3", description: "command 3 desc" },
   { name: "command 4", description: "command 4 desc" },
 ];
