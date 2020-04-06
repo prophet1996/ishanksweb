@@ -12,6 +12,12 @@ export default (props: ResumeProps) => {
         bold
         size={5}
       ></ResumeHeading>
+      <ResumeHeading
+        heading={"Full Stack Developer"}
+        underline={false}
+        bold={false}
+        size={2}
+      ></ResumeHeading>
     </ResumeWrapper>
   );
 };
