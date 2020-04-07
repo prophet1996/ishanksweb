@@ -13,3 +13,47 @@ export const ResumeWrapper = styled.div`
     padding-top: 5%;
   }
 `;
+
+export const ContactInfo = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  & > span {
+    margin: auto 0;
+  }
+  & > a {
+    margin: auto;
+  }
+  & > span,
+  & > a {
+    cursor: pointer;
+    display: flex;
+    color: ${(props) => props.theme.body};
+    align-items: center;
+  }
+  @media ${(props) => props.theme.deviceMax.tablet} {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: small;
+    margin: 1em 0;
+    grid-gap: 10px;
+    & > a {
+      margin: 0;
+    }
+  }
+  @media ${(props) => props.theme.deviceMax.mobileS} {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-size: x-small;
+    & > a {
+      margin: 0;
+    }
+  }
+`;
+
+export const SummaryText = styled.p`
+  font-size: 1.3em;
+  @media ${(props) => props.theme.deviceMax.tablet} {
+    font-size: 1.1em;
+  }
+`;
