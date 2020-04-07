@@ -51,9 +51,27 @@ export const ContactInfo = styled.div`
   }
 `;
 
-export const SummaryText = styled.p`
+export const SummaryText: any = styled.p`
   font-size: 1.3em;
   @media ${(props) => props.theme.deviceMax.tablet} {
     font-size: 1.1em;
   }
+  ${(props: any) => {
+    switch (props.size?.toLowerCase()) {
+      case "s":
+        return `font-size:1em;`;
+    }
+  }}
 `;
+
+export const SkillWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 2em;
+  @media ${(props) => props.theme.deviceMax.tablet} {
+    margin-top: 0;
+  }
+`;
+
+export const SkillBox = styled.div``;

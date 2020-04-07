@@ -1,6 +1,6 @@
 import React from "react";
 import BackButton from "../shared/BackButton";
-import { ResumeWrapper, ContactInfo, SummaryText } from "./_style";
+import { ResumeWrapper, ContactInfo, SummaryText, SkillWrapper, SkillBox } from "./_style";
 import { ResumeHeading, Svg } from "../shared";
 import { Theme } from '../../types';
 
@@ -41,12 +41,64 @@ export default (props: ResumeProps) => {
                 bold
                 size={3}
             ></ResumeHeading>
-            <ResumeHeading
-                heading={"Node"}
-                underline
-                bold
-                size={1}
-            ></ResumeHeading>
+            <SkillWrapper>
+                <SkillBox><ResumeHeading
+                    heading={"React.js / Redux.js"}
+                    underline={false}
+                    bold
+                    size={2}
+                ></ResumeHeading>
+                    <SummaryText size={'s'}>
+                        UI/UX experience with
+                        focus on performance optimizations.
+                </SummaryText>
+                </SkillBox>
+                <SkillBox>
+                    <ResumeHeading
+                        heading={"Node"}
+                        underline={false}
+                        bold
+                        size={2}
+                    ></ResumeHeading>
+                    <SummaryText size={'s'}>
+                        Server Side Development with
+                        advanced profiling, debugging and web
+                        server scaling.
+                    </SummaryText>
+                </SkillBox>
+                <SkillBox>
+                    <ResumeHeading
+                        heading={"MongoDb"}
+                        underline={false}
+                        bold
+                        size={2}
+                    ></ResumeHeading>
+
+                    <SummaryText size={'s'}>
+                        Server Side Development with
+                        advanced profiling, debugging and web
+                        server scaling.
+                    </SummaryText>
+
+                </SkillBox>
+                <SkillBox>
+                    <ResumeHeading
+                        heading={"HTML/CSS/JS"}
+                        underline={false}
+                        bold
+                        size={2}
+                    ></ResumeHeading>
+
+                    <SummaryText size={'s'}>
+                        ES6 expert, deep
+                        understanding of Semantic HTML. Experienced
+                        in CSS3 Grid/FlexBox and canvas
+                        animations.
+                    </SummaryText>
+
+                </SkillBox>
+
+            </SkillWrapper>
         </ResumeWrapper>
     );
 };
