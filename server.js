@@ -10,7 +10,7 @@ const host = "0.0.0.0";
 // console.log that your server is up and running
 app.listen(port, host, () => console.log(`Listening on port ${port}`));
 
-const root = require("path").join(__dirname, "client", "build");
+const root = require("path").join(__dirname, "ishank-portfolio", "build");
 
 app.use(express.static(root));
 
