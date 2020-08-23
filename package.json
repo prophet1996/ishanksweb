@@ -11,6 +11,7 @@
   "author": "ishank.web.dev@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "@types/react-router-dom": "^5.1.5",
     "express": "^4.17.1"
   }
 }
